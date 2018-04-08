@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9005bcf2acb797714402ee5634bdbd9f",
+    "content-hash": "1b300091efb8d8066d6496c7d1e026c0",
     "packages": [
         {
             "name": "api-skeletons/coding-standard",
@@ -259,21 +259,21 @@
         },
         {
             "name": "api-skeletons/zf-oauth2-doctrine",
-            "version": "2.0.4",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/API-Skeletons/zf-oauth2-doctrine.git",
-                "reference": "d08d08525522e6bf4549a9d987ad9e887a8aa4d1"
+                "reference": "5c4c6d0098a5b16248cff42968d347c0d41b893c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/API-Skeletons/zf-oauth2-doctrine/zipball/d08d08525522e6bf4549a9d987ad9e887a8aa4d1",
-                "reference": "d08d08525522e6bf4549a9d987ad9e887a8aa4d1",
+                "url": "https://api.github.com/repos/API-Skeletons/zf-oauth2-doctrine/zipball/5c4c6d0098a5b16248cff42968d347c0d41b893c",
+                "reference": "5c4c6d0098a5b16248cff42968d347c0d41b893c",
                 "shasum": ""
             },
             "require": {
-                "doctrine/doctrine-module": "^1.2",
-                "doctrine/doctrine-orm-module": "^1.1.5",
+                "doctrine/doctrine-module": "^1.2 || ^2.1",
+                "doctrine/doctrine-orm-module": "^1.1.5 || ^2.1",
                 "doctrine/orm": "^2.5.11",
                 "php": ">=7.1",
                 "zendframework/zend-config": "^2.6 || ^3.0",
@@ -285,10 +285,10 @@
                 "zfcampus/zf-oauth2": "^1.4"
             },
             "require-dev": {
+                "api-skeletons/coding-standard": "^1.0",
                 "mockery/mockery": "^0.9.5",
                 "phpunit/phpunit": "^6.0",
                 "satooshi/php-coveralls": "^1.0",
-                "squizlabs/php_codesniffer": "^3.1",
                 "zendframework/zend-authentication": "^2.5",
                 "zendframework/zend-eventmanager": "^3.2",
                 "zendframework/zend-form": "^2.10",
@@ -323,7 +323,7 @@
                 "doctrine",
                 "oauth2"
             ],
-            "time": "2018-02-28T22:17:37+00:00"
+            "time": "2018-04-06T19:39:58+00:00"
         },
         {
             "name": "api-skeletons/zf-oauth2-doctrine-console",
