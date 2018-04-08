@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * Local Configuration Override
+ *
+ * This configuration override file is for overriding environment-specific and
+ * security-sensitive configuration information. Copy this file without the
+ * .dist extension at the end and populate values as needed.
+ *
+ * @NOTE: This file is ignored from Git by default with the .gitignore included
+ * in ZendSkeletonApplication. This is a good practice, as it prevents sensitive
+ * credentials from accidentally being committed into version control.
+ */
+
+return array(
+    'doctrine' => array(
+        'connection' => array(
+            'orm_default' => array(
+                'driverClass' => 'Doctrine\\DBAL\\Driver\\PDOMySql\\Driver',
+                'params' => array(
+                    'user' => 'doctrine',
+                    'password' => 'apigility',
+                    'host' => 'mysql',
+                    'dbname' => 'apigility',
+                    'port' => '3306',
+                    'charset' => 'utf8',
+                    'collate' => 'utf8_general_ci',
+                ),
+            ),
+        ),
+
+       'migrations_configuration' => [
+            'orm_default' => [
+                'directory' => __DIR__ . '/../../module/Db/src/Db/Migrations',
+                'name'      => 'Doctrine Database Migrations',
+                'namespace' => 'Db\Migrations',
+                'table'     => 'Migrations',
+                'column'    => 'version',
+            ],
+        ],
+    ),
+);

@@ -1,0 +1,36 @@
+version: '2'
+services:
+    apigility-doctrine:
+        image: nginx:latest
+        ports:
+            - "80:80"
+        links:
+            - php
+        volumes:
+            - ./:/var/www
+            - ./docker/config/default.conf:/etc/nginx/conf.d/default.conf
+
+    php:
+        build:
+           context: .
+           dockerfile: docker/build/php-fpm
+        links:
+            - mysql
+        ports:
+            - "9000:9000"
+        volumes:
+            - ./:/var/www
+            - ./docker/config/php.ini:/usr/local/etc/php/conf.d/custom.ini
+
+    mysql:
+        image: mysql:latest
+        environment:
+            - MYSQL_USER=doctrine
+            - MYSQL_PASSWORD=apigility
+            - MYSQL_DATABASE=apigility
+            - MYSQL_ROOT_PASSWORD=123
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./docker/data/mysql:/var/lib/mysql
+            - ./docker/config/my.cnf:/etc/mysql/conf.d/custom.cnf

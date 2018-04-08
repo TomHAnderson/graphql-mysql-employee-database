@@ -1,0 +1,9 @@
+*~
+.vagrant/
+vendor/
+data/
+docker/data/
+config/development.config.php
+phpunit.xml
+module/Db/src/ZF
+config/modules.config.old
