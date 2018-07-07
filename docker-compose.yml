@@ -23,7 +23,7 @@ services:
             - ./docker/config/php.ini:/usr/local/etc/php/conf.d/custom.ini
 
     mysql:
-        image: mysql:latest
+        image: mysql:5.7
         environment:
             - MYSQL_USER=doctrine
             - MYSQL_PASSWORD=apigility
