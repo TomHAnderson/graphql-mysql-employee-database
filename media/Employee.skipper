@@ -116,7 +116,7 @@
         </orm-attributes>
       </field>
       <field name="salary" type="integer" required="true" uuid="15dda0e7-9b72-4a1c-8081-e023e82c6627"/>
-      <field name="fromDate" type="datetime" required="true" primary="true" uuid="422b4764-6e2f-461e-8bbc-6cc53d68cade">
+      <field name="fromDate" type="string" required="true" primary="true" uuid="422b4764-6e2f-461e-8bbc-6cc53d68cade">
         <orm-attributes>
           <attribute name="column">from_date</attribute>
         </orm-attributes>
@@ -126,6 +126,10 @@
           <attribute name="column">to_date</attribute>
         </orm-attributes>
       </field>
+      <index name="Unnamed Index" unique="true">
+        <index-field name="employee_id"/>
+        <index-field name="fromDate"/>
+      </index>
       <orm-attributes>
         <attribute name="table">salaries</attribute>
       </orm-attributes>
@@ -140,7 +144,7 @@
         </orm-attributes>
       </field>
       <field name="title" type="string" size="50" required="true" primary="true" uuid="44eb9dfb-27f5-467b-bf3c-988878732d70"/>
-      <field name="fromDate" type="datetime" required="true" primary="true" uuid="40f8bd47-9e24-4f4e-85a6-2dc2ea2dc58f">
+      <field name="fromDate" type="string" required="true" uuid="40f8bd47-9e24-4f4e-85a6-2dc2ea2dc58f">
         <orm-attributes>
           <attribute name="column">from_date</attribute>
         </orm-attributes>
@@ -150,6 +154,11 @@
           <attribute name="column">to_date</attribute>
         </orm-attributes>
       </field>
+      <index name="Unnamed Index" unique="true">
+        <index-field name="employee_id"/>
+        <index-field name="title"/>
+        <index-field name="fromDate"/>
+      </index>
       <orm-attributes>
         <attribute name="table">titles</attribute>
       </orm-attributes>
