@@ -34,7 +34,8 @@
         "api-skeletons/zf-doctrine-data-fixture": "^5.0",
         "doctrine/migrations": "^1.6",
         "zfr/zfr-cors": "^1.5",
-        "api-skeletons/coding-standard": "^1.0"
+        "api-skeletons/coding-standard": "^1.0",
+        "api-skeletons/zf-doctrine-graphql": "^2.0"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "^1.1.1",
