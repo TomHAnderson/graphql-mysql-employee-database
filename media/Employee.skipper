@@ -22,7 +22,7 @@
           <attribute name="column">emp_no</attribute>
         </orm-attributes>
       </field>
-      <field name="birthDate" type="datetime" required="true" uuid="135946fd-f15e-421b-9a49-acbc458efbcb">
+      <field name="birthDate" type="date" required="true" uuid="135946fd-f15e-421b-9a49-acbc458efbcb">
         <orm-attributes>
           <attribute name="column">birth_date</attribute>
         </orm-attributes>
@@ -38,7 +38,7 @@
         </orm-attributes>
       </field>
       <field name="gender" type="string" size="1" required="true" uuid="3d5cccb0-f5b2-4907-be06-cf3873e14fab"/>
-      <field name="hireDate" type="datetime" required="true" uuid="d587a803-af9d-40a9-8a0f-4b49195c12ed">
+      <field name="hireDate" type="date" required="true" uuid="d587a803-af9d-40a9-8a0f-4b49195c12ed">
         <orm-attributes>
           <attribute name="column">hire_date</attribute>
         </orm-attributes>
@@ -58,12 +58,12 @@
           <attribute name="column">dept_no</attribute>
         </orm-attributes>
       </field>
-      <field name="fromDate" type="datetime" required="true" uuid="d9468ecb-eb99-4f30-b557-8ba5a21fb99c">
+      <field name="fromDate" type="date" required="true" uuid="d9468ecb-eb99-4f30-b557-8ba5a21fb99c">
         <orm-attributes>
           <attribute name="column">from_date</attribute>
         </orm-attributes>
       </field>
-      <field name="toDate" type="datetime" required="true" uuid="d9290a2d-c8bc-44f1-b4c1-71dbd7fa4c69">
+      <field name="toDate" type="date" required="true" uuid="d9290a2d-c8bc-44f1-b4c1-71dbd7fa4c69">
         <orm-attributes>
           <attribute name="column">to_date</attribute>
         </orm-attributes>
@@ -89,12 +89,12 @@
           <attribute name="column">dept_no</attribute>
         </orm-attributes>
       </field>
-      <field name="fromDate" type="datetime" required="true" uuid="02cbdb0f-fe94-4f18-bf8f-398f9a5133e7">
+      <field name="fromDate" type="date" required="true" uuid="02cbdb0f-fe94-4f18-bf8f-398f9a5133e7">
         <orm-attributes>
           <attribute name="column">from_date</attribute>
         </orm-attributes>
       </field>
-      <field name="toDate" type="datetime" required="true" uuid="7564173f-ba92-44b0-8678-6d7189bbb382">
+      <field name="toDate" type="date" required="true" uuid="7564173f-ba92-44b0-8678-6d7189bbb382">
         <orm-attributes>
           <attribute name="column">to_date</attribute>
         </orm-attributes>
@@ -121,7 +121,7 @@
           <attribute name="column">from_date</attribute>
         </orm-attributes>
       </field>
-      <field name="toDate" type="datetime" required="true" uuid="044e2852-944a-46a6-9e53-6cb95cf8987b">
+      <field name="toDate" type="date" required="true" uuid="044e2852-944a-46a6-9e53-6cb95cf8987b">
         <orm-attributes>
           <attribute name="column">to_date</attribute>
         </orm-attributes>
@@ -149,7 +149,7 @@
           <attribute name="column">from_date</attribute>
         </orm-attributes>
       </field>
-      <field name="toDate" type="datetime" uuid="0c13a53e-4ffd-4fd1-b202-c391f1e4f30d">
+      <field name="toDate" type="date" uuid="0c13a53e-4ffd-4fd1-b202-c391f1e4f30d">
         <orm-attributes>
           <attribute name="column">to_date</attribute>
         </orm-attributes>

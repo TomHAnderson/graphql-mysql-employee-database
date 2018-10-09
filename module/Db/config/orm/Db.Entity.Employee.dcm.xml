@@ -2,11 +2,11 @@
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xsi="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
   <entity name="Db\Entity\Employee" table="employees">
     <id name="id" type="integer" column="emp_no"/>
-    <field name="birthDate" type="datetime" nullable="false" column="birth_date"/>
+    <field name="birthDate" type="date" nullable="false" column="birth_date"/>
     <field name="firstName" type="string" length="14" nullable="false" column="first_name"/>
     <field name="lastName" type="string" length="16" nullable="false" column="last_name"/>
     <field name="gender" type="string" length="1" nullable="false"/>
-    <field name="hireDate" type="datetime" nullable="false" column="hire_date"/>
+    <field name="hireDate" type="date" nullable="false" column="hire_date"/>
     <one-to-many field="departmentEmployee" target-entity="Db\Entity\DepartmentEmployee" mapped-by="employee"/>
     <one-to-many field="departmentManager" target-entity="Db\Entity\DepartmentManager" mapped-by="employee"/>
     <one-to-many field="salary" target-entity="Db\Entity\Salary" mapped-by="employee"/>
