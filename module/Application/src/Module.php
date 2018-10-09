@@ -18,11 +18,27 @@ class Module
         return include __DIR__ . '/../config/module.config.php';
     }
 
-    public function onBootstrap(MvcEvent $e)
+    public function onBootstrap(MvcEvent $event)
     {
+        $serviceManager = $event->getApplication()->getServiceManager();
+        $response = $serviceManager->get('response');
+
+        if ($response instanceof \Zend\Http\PhpEnvironment\Response) {
+            $response->getHeaders()->addHeaderLine("Access-Control-Allow-Origin: *");
+
+            UriFactory::registerScheme('chrome-extension', 'Zend\Uri\Uri');
+
+            if (isset($_SERVER['HTTP_CF_VISITOR'])) {
+                $visitor = json_decode($_SERVER['HTTP_CF_VISITOR']);
+
+                // If CloudFlare is in use redirect to https
+                if ($visitor->scheme === 'http') {
+                    header('Location: https://api.etreedb.org' . $_SERVER['REQUEST_URI']);
+                    exit;
+                }
+            }
+        }
+
         UriFactory::registerScheme('chrome-extension', 'Zend\Uri\Uri');
-
-        $eventManager = $e->getApplication()->getEventManager();
-
     }
 }

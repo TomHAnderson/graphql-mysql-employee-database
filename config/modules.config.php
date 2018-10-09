@@ -5,11 +5,9 @@
  * The previous config file has been stored in ./config/modules.config.old
  */
 return [
+    'ZF\Doctrine\GraphQL',
     'ZF\\Doctrine\\DataFixture',
-    //'ZF\\OAuth2\\Doctrine\\Identity',
-    //'ZF\\OAuth2\\Doctrine\\Permissions\\Acl',
     'Zend\\Mvc\\Console',
-    //'ZF\\OAuth2\\Doctrine',
     'Zend\\Cache',
     'Zend\\Form',
     'Zend\\I18n',
@@ -39,8 +37,10 @@ return [
     'ZF\\Doctrine\\QueryBuilder',
     'ZF\\Doctrine\\Repository',
     'ZF\\Doctrine\\Hydrator',
-    'ZfrCors',
+    //'ZfrCors',
+    'ZF\Doctrine\Criteria',
     'Application',
     'Console',
     'Db',
+    'GraphQL',
 ];
