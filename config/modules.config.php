@@ -42,5 +42,5 @@ return [
     'Application',
     'Console',
     'Db',
-    'GraphQL',
+    'GraphQLApi',
 ];

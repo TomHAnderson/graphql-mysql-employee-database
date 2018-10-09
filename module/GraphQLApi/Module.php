@@ -1,5 +1,5 @@
 <?php
-namespace GraphQL;
+namespace GraphQLApi;
 
 use ZF\Apigility\Provider\ApigilityProviderInterface;
 

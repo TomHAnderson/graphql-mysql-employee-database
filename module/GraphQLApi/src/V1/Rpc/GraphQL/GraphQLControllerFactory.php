@@ -1,6 +1,6 @@
 <?php
 
-namespace GraphQL\V1\Rpc\GraphQL;
+namespace GraphQLApi\V1\Rpc\GraphQL;
 
 use Interop\Container\ContainerInterface;
 use ZF\Doctrine\GraphQL\Type\Loader as TypeLoader;
