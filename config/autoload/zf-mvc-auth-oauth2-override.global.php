@@ -13,13 +13,6 @@ return [
     'zf-mvc-auth' => [
         'authentication' => [
             'adapters' => [
-                'oauth2_doctrine' => [
-                    'adapter' => 'ZF\\MvcAuth\\Authentication\\OAuth2Adapter',
-                    'storage' => [
-                        'storage' => 'oauth2.doctrineadapter.default',
-                        'route' => '/oauth',
-                    ],
-                ],
             ],
         ],
     ],
