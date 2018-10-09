@@ -7,7 +7,7 @@
 return [
     'ZF\\Doctrine\\DataFixture',
     'ZF\\OAuth2\\Doctrine\\Identity',
-    'ZF\\OAuth2\\Doctrine\\Permissions\\Acl',
+    //'ZF\\OAuth2\\Doctrine\\Permissions\\Acl',
     'Zend\\Mvc\\Console',
     'ZF\\OAuth2\\Doctrine',
     'Zend\\Cache',
