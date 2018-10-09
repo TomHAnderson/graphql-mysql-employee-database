@@ -180,7 +180,7 @@
     <entity uuid="8a557655-fa03-4a80-b90c-33d1bb73a79b" bg-color="#FFFFFF" hdr-color="#D2D2D2" position-x="46" position-y="401" size-x="0" size-x2="111" size-y="0" size-y2="73"/>
     <entity uuid="9b45d598-36c0-4bde-9541-86a89f688f8b" bg-color="#FFFFFF" hdr-color="#D2D2D2" position-x="479" position-y="121" size-x="0" size-x2="123" size-y="0" size-y2="73"/>
     <entity uuid="cbe0de80-aa92-4e26-80ca-f82c1c84b4a5" bg-color="#FFFFFF" hdr-color="#D2D2D2" position-x="27" position-y="107" size-x="0" size-x2="123" size-y="0" size-y2="73"/>
-    <module uuid="6fabd039-6944-42b1-8384-0790b069f7bf" bg-color="#EAE4F1" position-x="61" position-y="72" size-x="11" size-x2="640" size-y="22" size-y2="530"/>
+    <module uuid="6fabd039-6944-42b1-8384-0790b069f7bf" bg-color="#E1EDF0" position-x="61" position-y="72" size-x="11" size-x2="640" size-y="22" size-y2="530"/>
     <project uuid="791c54d0-ef58-4947-b49a-c0ea63f60ace" size-x="0" size-x2="752" size-y="0" size-y2="627"/>
   </visual-data>
 </skipper>

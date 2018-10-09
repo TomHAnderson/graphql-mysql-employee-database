@@ -73,6 +73,13 @@ class GraphQLController extends AbstractActionController
                         ],
                         'resolve' => $resolveLoader(Entity\Employee::class, $context),
                     ],
+                    'department' => [
+                        'type' => Type::listOf($typeLoader(Entity\Department::class, $context)),
+                        'args' => [
+                            'filter' => $filterLoader(Entity\Department::class, $context),
+                        ],
+                        'resolve' => $resolveLoader(Entity\Department::class, $context),
+                    ],
                 ],
             ]),
         ]);
