@@ -6,10 +6,10 @@
  */
 return [
     'ZF\\Doctrine\\DataFixture',
-    'ZF\\OAuth2\\Doctrine\\Identity',
+    //'ZF\\OAuth2\\Doctrine\\Identity',
     //'ZF\\OAuth2\\Doctrine\\Permissions\\Acl',
     'Zend\\Mvc\\Console',
-    'ZF\\OAuth2\\Doctrine',
+    //'ZF\\OAuth2\\Doctrine',
     'Zend\\Cache',
     'Zend\\Form',
     'Zend\\I18n',
