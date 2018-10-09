@@ -3,8 +3,8 @@
   <entity name="Db\Entity\DepartmentEmployee" table="dept_emp">
     <id name="employee" type="integer" association-key="true" column="emp_no"/>
     <id name="department" type="string" length="4" association-key="true" column="dept_no"/>
-    <field name="fromDate" type="date" nullable="false" column="from_date"/>
-    <field name="toDate" type="date" nullable="false" column="to_date"/>
+    <field name="fromDate" type="datetime" nullable="false" column="from_date"/>
+    <field name="toDate" type="datetime" nullable="false" column="to_date"/>
     <many-to-one field="employee" target-entity="Db\Entity\Employee" inversed-by="departmentEmployee">
       <join-columns>
         <join-column name="emp_no" referenced-column-name="emp_no" nullable="false"/>

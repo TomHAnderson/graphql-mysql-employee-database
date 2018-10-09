@@ -4,7 +4,7 @@
     <id name="employee" type="integer" association-key="true" column="emp_no"/>
     <id name="fromDate" type="string" column="from_date"/>
     <field name="salary" type="integer" nullable="false"/>
-    <field name="toDate" type="date" nullable="false" column="to_date"/>
+    <field name="toDate" type="datetime" nullable="false" column="to_date"/>
     <unique-constraints>
       <unique-constraint name="Unnamed Index" columns="emp_no,from_date"/>
     </unique-constraints>

@@ -3,8 +3,8 @@
   <entity name="Db\Entity\Title" table="titles">
     <id name="employee" type="integer" association-key="true" column="emp_no"/>
     <id name="title" type="string" length="50"/>
-    <field name="fromDate" type="string" nullable="false" column="from_date"/>
-    <field name="toDate" type="date" nullable="true" column="to_date"/>
+    <id name="fromDate" type="string" column="from_date"/>
+    <field name="toDate" type="datetime" nullable="true" column="to_date"/>
     <unique-constraints>
       <unique-constraint name="Unnamed Index" columns="emp_no,title,from_date"/>
     </unique-constraints>
